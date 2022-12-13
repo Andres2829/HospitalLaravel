@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+ 
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+  max-width: 1000px;
+  width: 600%;
+  max-height: 1925px; /* ancho del contenedor*/
+  height: 900%;
+  
+  margin-top: 40px; 
+  margin-right: 150px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align:center;
+}
+.container .title2{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align:left;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 3 - 20px); 
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #0878c4;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+  
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+  margin: 1px 0 ; /* separacion de altura checkbok */ 
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{/* separacion del nombre*/
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+/* numeracion de los check */
+ #dot-1:checked ~ .category label .uno,
+ #dot-2:checked ~ .category label .dos,
+ #dot-3:checked ~ .category label .tres,
+ #dot-4:checked ~ .category label .cuatro,
+ #dot-5:checked ~ .category label .cinco,
+ #dot-6:checked ~ .category label .seis,
+ #dot-7:checked ~ .category label .siete,
+ #dot-8:checked ~ .category label .ocho,
+ #dot-9:checked ~ .category label .nueve,
+ #dot-10:checked ~ .category label .diez,
+ #dot-11:checked ~ .category label .once,
+ #dot-12:checked ~ .category label .doce,
+ #dot-13:checked ~ .category label .trece,
+ #dot-14:checked ~ .category label .catorce,
+ #dot-15:checked ~ .category label .quince,
+ #dot-16:checked ~ .category label .dieciseis,
+ #dot-17:checked ~ .category label .diecisiete,
+ #dot-18:checked ~ .category label .diezciocho,
+ #dot-19:checked ~ .category label .diezcinueve,
+ #dot-20:checked ~ .category label .veinte,
+ #dot-21:checked ~ .category label .veinteuno,
+ #dot-22:checked ~ .category label .veintedos,
+ #dot-23:checked ~ .category label .veintetres,
+ #dot-24:checked ~ .category label .veintecuatro,
+ #dot-25:checked ~ .category label .veintecinco,
+ #dot-26:checked ~ .category label .veinteseis,
+ #dot-27:checked ~ .category label .veintesiete,
+ #dot-28:checked ~ .category label .veinteocho,
+ #dot-29:checked ~ .category label .veintenueve,
+ #dot-30:checked ~ .category label .treinta,
+ #dot-31:checked ~ .category label .treintauno,
+ #dot-32:checked ~ .category label .treintados,
+ #dot-33:checked ~ .category label .treintatres,
+ #dot-34:checked ~ .category label .treintacuatro,
+ #dot-35:checked ~ .category label .treintacinco,
+ #dot-36:checked ~ .category label .treintaseis,
+ #dot-37:checked ~ .category label .treintasiete,
+ #dot-38:checked ~ .category label .treintaocho,
+ #dot-39:checked ~ .category label .treintanueve,
+ #dot-40:checked ~ .category label .cuarenta,
+ #dot-41:checked ~ .category label .cuarentauno,
+ #dot-42:checked ~ .category label .cuarentados,
+ #dot-43:checked ~ .category label .cuarentatres,
+ #dot-44:checked ~ .category label .cuarentacuatro,
+ #dot-45:checked ~ .category label .cuarentacinco,
+ #dot-46:checked ~ .category label .cuarentaseis,
+ #dot-47:checked ~ .category label .cuarentasiete,
+ #dot-48:checked ~ .category label .cuarentaocho,
+ #dot-49:checked ~ .category label .cuarentanueve,
+ #dot-50:checked ~ .category label .cincuenta,
+ #dot-51:checked ~ .category label .cincuentauno,
+ #dot-52:checked ~ .category label .cincuentados,
+ #dot-53:checked ~ .category label .cincuentatres,
+ #dot-54:checked ~ .category label .cincuentacuatro,
+ #dot-55:checked ~ .category label .cincuentacinco,
+ #dot-56:checked ~ .category label .cincuentaseis,
+ #dot-57:checked ~ .category label .cincuentasiete,
+ #dot-58:checked ~ .category label .cincuentaocho,
+ #dot-59:checked ~ .category label .cincuentanueve,
+ #dot-60:checked ~ .category label .sesenta,
+ #dot-61:checked ~ .category label .sesentauno,
+ #dot-62:checked ~ .category label .sesentados,
+ #dot-63:checked ~ .category label .sesentatres,
+ #dot-64:checked ~ .category label .sesentacuatro,
+ #dot-65:checked ~ .category label .sesentacinco,
+ #dot-66:checked ~ .category label .sesentaseis,
+ #dot-67:checked ~ .category label .sesentasiete,
+ #dot-68:checked ~ .category label .sesentaocho,
+ #dot-69:checked ~ .category label .sesentanueve,
+ #dot-70:checked ~ .category label .setenta,
+ #dot-71:checked ~ .category label .setentauno,
+ #dot-72:checked ~ .category label .setentados,
+ #dot-73:checked ~ .category label .setentatres,
+ #dot-74:checked ~ .category label .setentacuatro,
+ #dot-75:checked ~ .category label .setentacinco,
+ #dot-76:checked ~ .category label .setentaseis,
+ #dot-77:checked ~ .category label .setentasiete,
+ #dot-78:checked ~ .category label .setentaocho,
+ #dot-79:checked ~ .category label .setentanueve,
+ #dot-80:checked ~ .category label .ochenta,
+
+ #dot-81:checked ~ .category label .ochentauno,
+ #dot-82:checked ~ .category label .ochentados,
+
+ #dot-83:checked ~ .category label .ochentatres,
+ #dot-84:checked ~ .category label .ochentacuatro,
+ #dot-85:checked ~ .category label .ochentacinco,
+ #dot-86:checked ~ .category label .ochentaseis,
+ #dot-87:checked ~ .category label .ochentasiete,
+ #dot-88:checked ~ .category label .ochentaocho,
+ #dot-89:checked ~ .category label .ochentanueve,
+ #dot-90:checked ~ .category label .noventa,
+ #dot-91:checked ~ .category label .noventauno,
+ #dot-92:checked ~ .category label .noventados,
+ #dot-93:checked ~ .category label .noventatres,
+ #dot-94:checked ~ .category label .noventacuatro,
+ #dot-95:checked ~ .category label .noventacinco,
+ #dot-96:checked ~ .category label .noventaseis,
+ #dot-97:checked ~ .category label .noventasiete,
+ #dot-98:checked ~ .category label .noventaocho,
+ #dot-99:checked ~ .category label .noventanueve,
+
+ #dot-100:checked ~ .category label .cien,
+ #dot-101:checked ~ .category label .cienuno,
+
+ #dot-102:checked ~ .category label .ciendos,
+ #dot-103:checked ~ .category label .cientres,
+ #dot-104:checked ~ .category label .ciencuatro,
+ #dot-105:checked ~ .category label .ciencinco,
+ #dot-106:checked ~ .category label .cienseis,
+ #dot-107:checked ~ .category label .ciensiete,
+ #dot-108:checked ~ .category label .cienocho,
+ #dot-109:checked ~ .category label .ciennueve,
+ #dot-110:checked ~ .category label .ciendiez,
+ #dot-111:checked ~ .category label .cienonce,
+ #dot-112:checked ~ .category label .ciendoce,
+ #dot-113:checked ~ .category label .cientrece,
+ #dot-114:checked ~ .category label .ciencatorce
+
+
+
+ {
+   background: #9b59b6;
+   border-color: #71b7e6;
+ }
+ form input[type="checkbox"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+
+
